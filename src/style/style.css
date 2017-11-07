@@ -1,0 +1,62 @@
+body {
+  background: #FFB75E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  height: 900px;
+}
+
+.header-container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-div-left, .header-div-right {
+  flex: 1;
+  display: flex;
+}
+
+.header-div-left {
+  font-family: 'Lobster', cursive;
+  margin-left: 15%;
+  font-size: 1.8em;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.1, #E5E5E5), color-stop(0.2, #E5E5E5),color-stop(0.6, #FFF), color-stop(0.7, #FFF), color-stop(0.75, #FFF), color-stop(1, #FFFFFF) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.1, #E5E5E5), color-stop(0.2, #E5E5E5),color-stop(0.6, #FFF), color-stop(0.7, #FFF), color-stop(0.75, #FFF), color-stop(1, #FFFFFF) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.header-div-right {
+  justify-content: flex-end;
+  margin-right: 15%;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.1, #E5E5E5), color-stop(0.2, #E5E5E5),color-stop(0.6, #E5E5E5), color-stop(0.7, #FFF), color-stop(0.75, #E5E5E5), color-stop(1, #FFF) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.1, #E5E5E5), color-stop(0.2, #E5E5E5),color-stop(0.6, #E5E5E5), color-stop(0.7, #FFF), color-stop(0.75, #E5E5E5), color-stop(1, #FFF) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.header-btn {
+  margin: 1em;
+  background-color: transparent;
+  border: none;
+}
+
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) {
+  .header-container {
+    font-size: 3em;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
